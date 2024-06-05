@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==== FAVICON ==== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!-- ==== REMIXICONS ==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+    <!-- ==== SWIPER CSS ==== -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>ARTIST</title>
+</head>
+
+<body>
+
+    <!-- ==== HEADER ==== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">HANA'S</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="index.html" class="nav__link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="education.html" class="nav__link">EDUCATION</a>
+                    </li>
+                    <li>
+                        <a href="family.html" class="nav__link">FAMILY</a>
+                    </li>
+                    <li>
+                        <a href="friends.html" class="nav__link">FRIENDS</a>
+                    </li>
+                    <li>
+                        <a href="hobby.html" class="nav__link">HOBBY</a>
+                    </li>
+                    <li>
+                        <a href="memories.html" class="nav__link">MEMORIES</a>
+                    </li>
+                    <li>
+                        <a href="artist.html" class="nav__link">ARTIST</a>
+                    </li>
+                </ul>
+
+                <div class="nav__social">
+                    <a href="https://www.instagram.com/jennnnny.s?igsh=MXNydzhsNnYzbmZxbw%3D%3D&utm_source=qr"
+                        target="_blank" class="nav__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@jeennnwy?_t=8mTQ4v3rc8H&_r=1" target="_blank"
+                        class="nav__social-link">
+                        <i class="ri-tiktok-line"></i>
+                    </a>
+                    <a href="https://www.snapchat.com/add/jeennnyyss?share_id=hc9pZ7xWRzy8Q6CBOVevFA&locale=en_MY"
+                        target="_blank" class="nav__social-link">
+                        <i class="ri-snapchat-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==== HOME ==== -->
+
+    <main class="main">
+
+        <section class="music container" id="music">
+            <div class="music__content grid">
+                <div class="music__group">
+                    <a href="https://www.instagram.com/taylorswift?igsh=YWtmaWo4NXpxdG5r" target="_blank"><img src="image/taylor1.png" alt="image" class="music__img"></a>
+                    <div class="music__indicator">
+                        <div class="music__details-img">
+                            <h4 class="music__details-title">Taylor's Instagram</h4>
+                            <span class="music__details-subtitle">CLICK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="music__data">
+                    <h3 class="music__subtitle">Dive into Taylor's Musical Universe</h3>
+                    <h1 class="music__title">SWIFTLY<br>YOURS<br></h1>
+                    <p class="music__description">
+                        Taylor Swift: Iconic voice, timeless melodies.
+                    </p>
+                </div>
+                <div class="right_col">
+                    <p>CLICK HERE</p>
+                    <img src="image/button.png" id="button__music">
+
+                </div>
+            </div>
+
+            <audio id="music__taylor">
+                <source src="audio/taylor.mp3" type="audio/mp3">
+            </audio>
+
+            <script>
+                var music__taylor = document.getElementById("music__taylor");
+                var button__music = document.getElementById("button__music");
+
+                button__music.onclick = function () {
+                    if (music__taylor.paused) {
+                        music__taylor.play();
+                        button__music.src = "image/button.png";
+                    } else {
+                        music__taylor.pause();
+                        button__music.src = "image/pause.png";
+                    }
+                }
+            </script>
+        </section>
+
+    </main>
+
+    <!-- ==== DESCRIBE ==== -->
+
+    <section class="describe container" id="describe">
+        <div class="describe__container container grid">
+            <div class="describe__data">
+                <h2 class="section__title">
+                    <img src="video/name.gif">
+                </h2>
+
+                <p class="describe__description">
+                    Taylor Swift is a globally renowned singer-songwriter, actress, and philanthropist
+                    known for her versatile talent, impactful music, and empowering persona. Taylor Swift was born on
+                    December 13, 1989.
+                    She achieved widespread success with subsequent albums like "Fearless" (2008), "Speak Now"
+                    (2010), and "Red" (2012), earning numerous awards and accolades, including Grammy Awards.
+                    <br><a href="https://www.taylorswift.com/" target="_blank" class="custom-link">Explore Taylor Swift Website !</a>
+                </p>
+            </div>
+            <img src="image/taylor.png" alt="image" class="describe__img">
+        </div>
+
+        <!-- ==== TAYLOR  ==== -->
+
+        <section class="section taylor">
+            <h2 class="section__title">TAYLOR SWIFT</h2>
+
+            <div class="taylor__container container grid">
+                <div class="taylor__data">
+                    <img src="image/hand.png" alt="" class="taylor__img">
+                    <h3 class="taylor__title">2006</h3>
+                    <p class="taylor__description">Over the years, she has evolved from a country music star to a global
+                        pop icon,
+                        known for her narrative songwriting and versatile musical styles. </p>
+                </div>
+
+                <div class="taylor__data">
+                    <img src="image/ticket.png" alt="" class="taylor__img">
+                    <h3 class="taylor__title">FIRST DEBUT</h3>
+                    <p class="taylor__description">"Tim McGraw" is Taylor Swift's debut single, released on June 19,
+                        2006. It was the lead single
+                        from her self-titled debut album, "Taylor Swift," which was released later that year.</p>
+                </div>
+
+                <div class="taylor__data">
+                    <img src="image/guitar.png" alt="" class="taylor__img">
+                    <h3 class="taylor__title">HIT SINGLES</h3>
+                    <p class="taylor__description">"Love Story," "You Belong with Me," "We Are Never Ever Getting Back
+                        Together,"
+                        "Shake It Off," "Blank Space," "Look What You Made Me Do," and "Cardigan."</p>
+                </div>
+
+                <div class="taylor__data">
+                    <img src="image/red.png" alt="" class="taylor__img">
+                    <h3 class="taylor__title">1989 WORLD TOUR</h3>
+                    <p class="taylor__description">The "1989 World Tour" catapulted Taylor Swift into pop
+                        superstardom with its electrifying performances and larger-than-life production."</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="taylor__vd">
+            <video id="taylor-video" width="100%" controls>
+                <source src="video/taylor.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+    </section>
+
+    <!-- ==== GALLERY ==== -->
+
+    <section class="artist__container container grid">
+        <ul class="artist__ul">
+            <li class="artist__list active" data-filter="ALL">ALL</li>
+            <li class="artist__list" data-filter="photoshot">PHOTOSHOT</li>
+            <li class="artist__list" data-filter="album">ALBUM</li>
+            <li class="artist__list" data-filter="concert">CONCERT</li>
+        </ul>
+
+        <div class="artist__photo">
+            <div class="itemBox album"><img src="image/album1.jpg"></div>
+            <div class="itemBox photoshot"><img src="image/photo1.jpg"></div>
+            <div class="itemBox concert"><img src="image/concert1.jpg"></div>
+
+            <div class="itemBox album"><img src="image/album2.jpg"></div>
+            <div class="itemBox photoshot"><img src="image/photo2.jpg"></div>
+            <div class="itemBox concert"><img src="image/concert2.jpg"></div>
+
+            <div class="itemBox album"><img src="image/album3.jpg"></div>
+            <div class="itemBox photoshot"><img src="image/photo3.jpg"></div>
+            <div class="itemBox concert"><img src="image/concert3.jpg"></div>
+
+            <div class="itemBox album"><img src="image/album4.jpg"></div>
+            <div class="itemBox photoshot"><img src="image/photo4.jpg"></div>
+            <div class="itemBox concert"><img src="image/concert4.jpg"></div>
+
+            <div class="itemBox album"><img src="image/album5.jpg"></div>
+            <div class="itemBox photoshot"><img src="image/photo5.jpg"></div>
+            <div class="itemBox concert"><img src="image/concert5.jpg"></div>
+
+            <div class="itemBox album"><img src="image/album6.jpg"></div>
+            <div class="itemBox concert"><img src="image/concert6.jpg"></div>
+
+            <div class="itemBox album"><img src="image/album7.jpg"></div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.artist__list').click(function () {
+                const value = $(this).attr('data-filter');
+                if (value == 'ALL') {
+                    $('.itemBox').show('1000');
+                }
+                else {
+                    $('.itemBox').not('.' + value).hide('1000');
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+            })
+        })
+    </script>
+
+    <!-- ==== FOOTER ==== -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>About Me</h3>
+                    <p>Passionate about technology and creativity, I strive to innovate and inspire through my work,
+                        fueled by curiosity and a love for problem-solving.</p>
+                    <p>Chrome, Firefox, Safari, Edge</p>
+                    <p>Screen Resolution: 1920x1080, as</p>
+                    <p>Last Updated: June 1, 2024</p>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AINI FARHANA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jquery.hislide.js"></script>
+
+    <!-- ==== SCROLL REVEAL ==== -->
+    <script src="scrollreveal.min.js"></script>
+
+    <!-- ==== SWIPER JS ==== -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- ==== MAIN JS ==== -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
